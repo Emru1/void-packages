@@ -1,0 +1,5 @@
+--- a/app/menus.c
++++ b/app/menus.c
+@@ -117 +117 @@ static const GtkActionEntry display_entr
+-    { "FileExport", GTK_STOCK_CONVERT, N_("_Export ..."), NULL, NULL, G_CALLBACK (file_export_callback) },
++    { "FileExport", GTK_STOCK_CONVERT, N_("_Export ..."), "<control><shift>E", NULL, G_CALLBACK (file_export_callback) },
