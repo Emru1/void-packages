@@ -1,6 +1,6 @@
 # Template file for 'OpenXcomEx'
 pkgname=OpenXcomEx
-version=7.5.16
+version=7.7.5
 revision=1
 build_style=cmake
 conflicts="OpenXcom"
@@ -13,7 +13,7 @@ maintainer="Emil Tomczyk <emil.tomczyk@skni.umcs.pl>"
 license="GPL-3.0-or-later"
 homepage="https://openxcom.org/forum/index.php/topic,6586.0.html"
 giturl="https://github.com/meridianoxc/openxcom"
-gitcommit="eb28defc8f0f3f9788cca9199ad2c6f5c1be28aa"
+gitcommit="f4c39577561f90a548d589277f6d197470224ac0"
 
 do_fetch() {
 	git clone ${giturl} ${wrksrc}
