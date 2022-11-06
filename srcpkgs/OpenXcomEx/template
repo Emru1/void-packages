@@ -1,7 +1,7 @@
 # Template file for 'OpenXcomEx'
 pkgname=OpenXcomEx
 version=7.8.2
-revision=1
+revision=2
 build_style=cmake
 conflicts="OpenXcom"
 hostmakedepends="automake xmlto git cmake pkg-config ninja"
@@ -12,11 +12,5 @@ short_desc="Reimplementation of the original X-Com game with extended functional
 maintainer="Emil Tomczyk <emil.tomczyk@skni.umcs.pl>"
 license="GPL-3.0-or-later"
 homepage="https://openxcom.org/forum/index.php/topic,6586.0.html"
-giturl="https://github.com/meridianoxc/openxcom"
-gitcommit="68497f9f557cbd01530feac8a6c5ef0b58c35153"
-
-do_fetch() {
-	git clone ${giturl} ${wrksrc}
-	cd ${wrksrc}
-	git checkout ${gitcommit}
-}
+distfiles="https://yamo.skni.umcs.pl/~emil.tomczyk/src/OpenXcomEx-${version}.tar.gz"
+checksum="48f34e82438e50b06ed5bb1d78ea919c85b80e5693034aafc9216658e0dca1ed"
