@@ -1,6 +1,6 @@
 # Template file for 'OpenXcomEx'
 pkgname=OpenXcomEx
-version=7.8.12
+version=7.8.14
 revision=1
 build_style=cmake
 conflicts="OpenXcom"
@@ -13,4 +13,4 @@ maintainer="Emil Tomczyk <emil.tomczyk@skni.umcs.pl>"
 license="GPL-3.0-or-later"
 homepage="https://openxcom.org/forum/index.php/topic,6586.0.html"
 distfiles="https://yamo.skni.umcs.pl/~emil.tomczyk/src/OpenXcomEx-${version}.tar.gz"
-checksum="1ac53f3df32d4494556896bb4347d5b2404b535b3f8fd6617f67e5ab66188a4c"
+checksum="187f8f0d48b13f65054e4b21017247057dbfa353136601bd911405c3bb13be30"
