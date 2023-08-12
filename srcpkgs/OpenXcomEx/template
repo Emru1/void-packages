@@ -1,6 +1,6 @@
 # Template file for 'OpenXcomEx'
 pkgname=OpenXcomEx
-version=7.9.6
+version=7.9.10
 revision=1
 build_style=cmake
 conflicts="OpenXcom"
@@ -12,5 +12,5 @@ short_desc="Reimplementation of the original X-Com game with extended functional
 maintainer="Emil Tomczyk <emil.tomczyk@skni.umcs.pl>"
 license="GPL-3.0-or-later"
 homepage="https://openxcom.org/forum/index.php/topic,6586.0.html"
-distfiles="https://yamo.skni.umcs.pl/~emil.tomczyk/src/OpenXcomEx-${version}.tar.gz"
-checksum="ba7747457ca9295326990c842ceb038636508a2a31d7adc0e91cf521de0871b4"
+distfiles="https://orome.emru.xyz/~emru/src/OpenXcomEx-${version}.tar.gz"
+checksum=fd6df874e0ec559e5538bcd8e47b6059f8a0b034107d25ba5ed443159f16954d
