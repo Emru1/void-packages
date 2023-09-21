@@ -1,11 +1,10 @@
 # Template file for 'OpenXcomEx'
 pkgname=OpenXcomEx
-version=7.9.10
+version=7.9.13
 revision=1
 build_style=cmake
-conflicts="OpenXcom"
-hostmakedepends="automake xmlto git cmake pkg-config ninja"
 configure_args="-DCMAKE_BUILD_TYPE=Release -DDEV_BUILD=OFF -DBUILD_PACKAGE=OFF"
+hostmakedepends="automake xmlto git cmake pkg-config ninja"
 makedepends="SDL_gfx-devel SDL_image-devel SDL_mixer-devel zlib-devel
  glu-devel boost-devel yaml-cpp-devel"
 short_desc="Reimplementation of the original X-Com game with extended functionality"
@@ -13,4 +12,5 @@ maintainer="Emil Tomczyk <emil.tomczyk@skni.umcs.pl>"
 license="GPL-3.0-or-later"
 homepage="https://openxcom.org/forum/index.php/topic,6586.0.html"
 distfiles="https://orome.emru.xyz/~emru/src/OpenXcomEx-${version}.tar.gz"
-checksum=fd6df874e0ec559e5538bcd8e47b6059f8a0b034107d25ba5ed443159f16954d
+checksum=99d4f613ea505c4d8ed696b10b148b6e7090fb536e6993a2245dce10f9e3c44f
+conflicts="OpenXcom"
