@@ -1,0 +1,26 @@
+# Template file for 'google-drive-ocamlfuse'
+pkgname=google-drive-ocamlfuse
+version=0.7.30
+revision=1
+hostmakedepends="ocaml dune opam tar git rsync mercurial darcs pkg-config sqlite-devel libcurl-devel fuse-devel gmp-devel"
+short_desc="FUSE Filesystem for Google Drive"
+maintainer="Kyle Nusbaum <knusbaum+void@sdf.org>"
+license="MIT"
+homepage="https://astrada.github.io/google-drive-ocamlfuse"
+distfiles="https://github.com/astrada/google-drive-ocamlfuse/archive/refs/tags/v${version}.tar.gz"
+checksum=3fe3f0d4051f1a81e37f6da9e8a492eb3c81f7450c6b43fee81a7fd94249bfa0
+nocross="ocaml and dune do not support cross-compilation out-of-the-box"
+
+do_build() {
+	set -x
+	opam init -y
+	opam install -y camlidl cryptokit extlib gapi-ocaml ocamlfuse sqlite3 tiny_httpd
+	eval $(opam env)
+	dune build @install
+}
+
+do_install() {
+	dune install --prefix=/usr --destdir="$DESTDIR" \
+	--mandir=/usr/share/man --docdir=/usr/share/doc
+	vlicense LICENSE
+}
