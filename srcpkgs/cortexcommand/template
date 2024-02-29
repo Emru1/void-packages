@@ -1,0 +1,12 @@
+# Template file for 'cortexcommand'
+pkgname=cortexcommand
+version=6.2.2
+revision=1
+build_style=meson
+hostmakedepends="ninja gcc pkg-config SDL2-devel SDL2_image-devel libflac-devel minizip-devel LuaJIT-devel liblz4-devel libpng-devel tbb-devel"
+short_desc="Cortex Command Community Projects"
+maintainer="Emil Tomczyk <emru@emru.xyz>"
+license="AGPL-3.0"
+homepage="https://cortex-command-community.github.io/"
+distfiles="https://github.com/cortex-command-community/Cortex-Command-Community-Project/archive/refs/tags/v${version}.tar.gz"
+checksum=66fb83566982d2fed4b01c2c83b5cd2ef4b8e6ede08f160eb16509f4bf340c80
