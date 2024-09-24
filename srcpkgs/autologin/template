@@ -1,0 +1,17 @@
+# Template file for 'autologin'
+pkgname=autologin
+version=1.0.0
+revision=1
+build_style=meson
+makedepends="pam-devel"
+short_desc="It logs you in. Automatically"
+maintainer="Emil Tomczyk <emru@emru.xyz>"
+license="GPL-3.0-or-later"
+homepage="https://git.sr.ht/~kennylevinsen/autologin"
+distfiles="https://git.sr.ht/~kennylevinsen/autologin/archive/${version}.tar.gz"
+checksum=eb084620e660c3d1708beb58cd3520220ad05b5f628378c3118c36379b33221a
+
+post_install() {
+	vmkdir etc/pam.d
+	vcopy ${FILESDIR}/pam etc/pam.d/autologin
+}
