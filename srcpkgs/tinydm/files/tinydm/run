@@ -1,0 +1,16 @@
+#!/bin/sh
+
+if [ ! -e /etc/tinydm_user ]
+then
+	exit 1
+fi
+
+user="$(cat /etc/tinydm_user)"
+
+if [ -z "$user" ]
+then
+    exit 1
+fi
+
+exec 2>&1
+exec autologin "$user" tinydm-run-session 

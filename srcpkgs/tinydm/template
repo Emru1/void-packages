@@ -1,0 +1,22 @@
+# Template file for 'tinydm'
+pkgname=tinydm
+version=1.1.0
+revision=1
+depends="autologin"
+short_desc="Wayland/X11 session starter for single user machines"
+maintainer="Emil Tomczyk <emru@emru.xyz>"
+license="GPL-3.0-or-later"
+homepage="https://gitlab.com/postmarketOS/tinydm"
+distfiles="https://gitlab.com/postmarketOS/tinydm/-/archive/${version}/tinydm-${version}.tar.gz"
+checksum=e25f445258dc638c1562939c43e05435e7f9f16462574cb39dd4fe24d9823d15
+
+do_install() {
+	vbin tinydm-run-session.sh tinydm-run-session
+	vbin tinydm-set-session.sh tinydm-set-session
+	vbin tinydm-unset-session.sh tinydm-unset-session
+
+	vmkdir etc/tinydm.d/env-wayland.d
+	vmkdir etc/tinydm.d/env-x11.d
+
+	vsv tinydm
+}
