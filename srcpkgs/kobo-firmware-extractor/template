@@ -1,0 +1,13 @@
+# Template file for 'kobo-firmware-extractor'
+pkgname=kobo-firmware-extractor
+version=20220915
+revision=1
+build_style=gnu-makefile
+depends="busybox"
+short_desc="Extracts firmware from hidden partitions on Kobo/Tolino ebook readers"
+maintainer="Emil Tomczyk <emru@emru.xyz>"
+license="MIT"
+homepage="https://github.com/akemnade/kobo-firmware-extractor"
+_commit="9edc87d8f0a4d04bbe06f7e3969b85221b578fb9"
+distfiles="https://github.com/akemnade/kobo-firmware-extractor/archive/${_commit}.tar.gz"
+checksum=a707c473abb52917ce91c6324a8efadfea9661618cc62c55f41209bf260cb101
