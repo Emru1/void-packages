@@ -1,6 +1,6 @@
 # Template file for 'OpenXcomEx'
 pkgname=OpenXcomEx
-version=7.14
+version=7.14.1
 revision=1
 build_style=cmake
 configure_args="-DCMAKE_BUILD_TYPE=Release -DDEV_BUILD=OFF -DBUILD_PACKAGE=OFF"
@@ -11,7 +11,7 @@ short_desc="Reimplementation of the original X-Com game with extended functional
 maintainer="Emil Tomczyk <emru@emru.xyz>"
 license="GPL-3.0-or-later"
 homepage="https://openxcom.org/forum/index.php/topic,6586.0.html"
-_commit_hash="ddeea35e9866b4005b7f688102ee19baee635d1b"
+_commit_hash="22dd769c47347cdc252df68cac56f85389c80e44"
 distfiles="https://github.com/MeridianOXC/OpenXcom/archive/${_commit_hash}.tar.gz"
-checksum=22865955f8b98a6e3c669e038a4df54a5795ee7c504cb607f07701251c65b129
+checksum=a3c707e30709dfc246ea4390ba7ddec212f9b3cb8eff6cf377f363405dbaea3b
 conflicts="OpenXcom"
