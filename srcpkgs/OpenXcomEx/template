@@ -13,5 +13,5 @@ license="GPL-3.0-or-later"
 homepage="https://openxcom.org/forum/index.php/topic,6586.0.html"
 _commit_hash="0f8616d8339b2d842932a9127616a6dffecb2f91"
 distfiles="https://github.com/MeridianOXC/OpenXcom/archive/${_commit_hash}.tar.gz"
-checksum=2669f5a5815dfdf2f8a53cc145fd142ef199e4880a428728cad19c97c1eb2951
+checksum=9efa942e55ceb438e662ad96c1ca76db9e15692f0c235b17bd9e3de567952ae2
 conflicts="OpenXcom"
