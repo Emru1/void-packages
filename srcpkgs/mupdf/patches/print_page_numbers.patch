@@ -1,0 +1,13 @@
+diff --git a/platform/x11/pdfapp.c b/platform/x11/pdfapp.c
+index 6775f2107..083edb044 100644
+--- a/platform/x11/pdfapp.c
++++ b/platform/x11/pdfapp.c
+@@ -976,6 +976,8 @@ static void pdfapp_showpage(pdfapp_t *app, int loadpage, int drawpage, int repai
+ 	fz_irect ibounds;
+ 	fz_cookie cookie = { 0 };
+ 
++	printf("page: %d\n", app->pageno);
++
+ 	if (!app->nowaitcursor)
+ 		wincursor(app, WAIT);
+ 
