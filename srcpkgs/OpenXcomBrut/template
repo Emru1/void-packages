@@ -1,0 +1,16 @@
+# Template file for 'OpenXcomBrut'
+pkgname=OpenXcomBrut
+version=9.2.6
+revision=1
+build_style=cmake
+configure_args="-DCMAKE_BUILD_TYPE=Release -DDEV_BUILD=OFF -DBUILD_PACKAGE=OFF"
+hostmakedepends="pkg-config"
+makedepends="SDL_gfx-devel SDL_image-devel SDL_mixer-devel zlib-devel
+ glu-devel boost-devel yaml-cpp-devel sdl12-compat-devel"
+short_desc="Reimplementation of the original X-Com game with better AI"
+maintainer="Emil Tomczyk <emru@emru.xyz>"
+license="GPL-3.0-or-later"
+homepage="https://openxcom.org/forum/index.php?topic=11663.0"
+distfiles="https://github.com/Xilmi/OpenXcom/archive/refs/tags/v_${version//./_}.tar.gz"
+checksum=8ce04fd2c83274a7c37867f3213c49d713fd806739229ceb01a97d27219cfdfc
+conflicts="OpenXcom OpenXcomEx"
