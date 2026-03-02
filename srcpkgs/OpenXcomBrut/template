@@ -1,6 +1,6 @@
 # Template file for 'OpenXcomBrut'
 pkgname=OpenXcomBrut
-version=2025.11.04
+version=2025.12.11
 revision=1
 build_style=cmake
 configure_args="-DCMAKE_BUILD_TYPE=Release -DDEV_BUILD=OFF -DBUILD_PACKAGE=OFF"
@@ -12,5 +12,5 @@ maintainer="Emil Tomczyk <emru@emru.xyz>"
 license="GPL-3.0-or-later"
 homepage="https://openxcom.org/forum/index.php?topic=11663.0"
 distfiles="https://github.com/Xilmi/OpenXcom/archive/refs/tags/v_${version//./_}.tar.gz"
-checksum=22e1615f62e7e892a6f3a4a72b3fcc0388eef1e659147f3dfd0bf8243f594b0c
+checksum=baa5f05d22d70a274f3853b7abd23db1e569370d9907b7805a76796d3153123e
 conflicts="OpenXcom OpenXcomEx"
